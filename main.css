@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+header {
+    padding: 16px 0;
+    background-color:rgb(156, 153, 153);
+    color: rgb(224, 222, 213);
+    text-align: center;
+}
+
+header nav li {
+    display: inline;
+    margin-left: 24px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: rgb(224, 222, 213);
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container img{
+    width: 355px;
+    height: 300px;
+    margin-top: 20px;
+}
+
+.sobre-loja {
+    text-align: justify;
+    margin-left: 100px;
+}
+
+section h2 {
+    padding: 48px 0;
+}
+
+.lista-produtos {
+    margin-left: 20px;
+    list-style: none;
+}
+
+section ul li {
+    padding: 16px;
+
+}
