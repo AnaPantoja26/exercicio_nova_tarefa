@@ -110,5 +110,15 @@ button {
 }
 
 @media screen and (max-width: 1023px min-width:641px) {
+    container {
+        display: block;
+        max-width: 90%; 
+    }
+
+    .lista-produtos {
+        list-style: none;
+        display: block;
+        font-size: 1.5em;
+    }
         
 }
