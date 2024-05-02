@@ -48,12 +48,12 @@ section h2 {
 }
 
 .lista-produtos {
-    margin-left: 184px;
     list-style: none;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-right: 200px;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 section ul li {
@@ -109,16 +109,60 @@ button {
     color: rgb(78, 7, 7);
 }
 
-@media screen and (max-width: 1023px min-width:641px) {
-    container {
-        display: block;
-        max-width: 90%; 
+@media screen and (min-width: 641px) and (max-width: 1024px){
+        .lista-produtos {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .container {
+            display: grid;
+            margin-left: 15px;
+            width: 100%;
+            text-align: justify; 
+        }
+
+        .image {
+            margin-left: 15px;
+            color:rgb(87, 83, 83);
+        }
+
+        .sobre-loja {
+            text-align: justify;
+            margin-left: 0;
+        }
+
+        header nav li {
+            display: inline;
+            text-align: center;
+            padding: 8px;
+            margin: 0;
+        }
     }
 
-    .lista-produtos {
-        list-style: none;
-        display: block;
-        font-size: 1.5em;
+@media screen and (max-width: 640px) {
+        .lista-produtos {
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .image {
+            margin-left: 15px;
+            color:rgb(87, 83, 83);
+        }
+
+        .container {
+            display: grid;
+            margin-left: 15px;
+            width: 100%;
+            text-align: justify; 
+        }
+
+        .sobre-loja {
+            margin: 0;
+            padding: 0;
+        }
+
+        .lista-produtos {
+            margin-left: 100px;
+        }
+
     }
-        
-}
